@@ -26,12 +26,12 @@ public class GeocodingController {
     }
 
     @PostMapping("/store/addresses")
-    public void storeAddresses(@RequestBody byte[] addressFileContent){
-        addressesRepository.addAddresses(fileParser.parse(addressFileContent));
+    public void storeAddresses(@RequestBody byte[] addressesFileContent){
+        addressesRepository.addAddresses(fileParser.parse(addressesFileContent));
     }
 
     @GetMapping("/get/addresses/all")
-    public Collection<Address> getAllAddress(){
-        return addressesRepository.getAllAddress();
+    public Collection<Address> getAllAddresses(){
+        return addressesRepository.getAllAddresses();
     }
 }

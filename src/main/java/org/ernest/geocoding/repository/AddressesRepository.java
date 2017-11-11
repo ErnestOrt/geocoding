@@ -10,5 +10,5 @@ public interface AddressesRepository {
 
     void addAddresses(List<String> addressesList);
     void addAddress(String addressName);
-    Collection<Address> getAllAddress();
+    Collection<Address> getAllAddresses();
 }

@@ -38,7 +38,7 @@ public class AddressesRepositoryImpl implements AddressesRepository {
     }
 
     @Override
-    public Collection<Address> getAllAddress() {
+    public Collection<Address> getAllAddresses() {
         return addressesMap.values();
     }
 }
