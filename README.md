@@ -9,17 +9,12 @@
 
 ```
     @PostMapping("/store/address")
-    public void storeAddress(@RequestBody String address){
-        addressesRepository.addAddress(address);
-    }
+    public void storeAddress(@RequestBody String address)
 
     @PostMapping("/store/addresses")
-    public void storeAddresses(@RequestBody byte[] addressFileContent){
-        addressesRepository.addAddresses(fileParser.parse(addressFileContent));
-    }
+    public void storeAddresses(@RequestBody byte[] addressFileContent)
 
     @GetMapping("/get/addresses/all")
-    public Collection<Address> getAllAddress(){
-        return addressesRepository.getAllAddress();
-    }
+    public Collection<Address> getAllAddress()
+    
 ```
