@@ -12,9 +12,9 @@
     public void storeAddress(@RequestBody String address)
 
     @PostMapping("/store/addresses")
-    public void storeAddresses(@RequestBody byte[] addressFileContent)
+    public void storeAddresses(@RequestBody byte[] addressesFileContent)
 
     @GetMapping("/get/addresses/all")
-    public Collection<Address> getAllAddress()
+    public Collection<Address> getAllAddresses()
     
 ```
